@@ -1,8 +1,8 @@
 # Web-Javascript
 
-> **javascript** 
+> **javascript **
 >
-> > 사용자와 상호작용하는 언어
+> > 사용자와 상호작용하는 언어 (시간의 순서가 중요함)
 > >
 > > HTML을 제어하는 언어
 
