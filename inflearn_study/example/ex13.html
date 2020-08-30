@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function linksSetColor(color) {
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while (i < alist.length) {
+                alist[i].style.color = color;
+                i++
+            }
+        }
+
+        function bodySetColor(color) {
+            document.querySelector('body').style.color = color
+        }
+
+        function bodySetBackGround(color) {
+            document.querySelector('body').style.backgroundColor = color
+        }
+
+        function nightDayHandler(self) {
+
+            if (self.value === 'night') {
+                bodySetBackGround('black');
+                bodySetColor('white');
+                self.value = 'day'
+
+                linksSetColor('powderblue');
+            } else {
+                bodySetBackGround('white');
+                bodySetColor('black');
+                self.value = 'night'
+
+                linksSetColor('blue');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="night" onclick="nightDayHandler(this)">
+    <h1><a href="#">WEB</a></h1>
+    <ol>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">Javascript</a></li>
+    </ol>
+    <p>hello Javascript</p>
+</body>
+
+</html>
