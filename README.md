@@ -7,5 +7,5 @@ javascript를 집중적으로 공부하기 위해 만든 공간입니다
 
 📗 `inflearn_js_immutability`  inflearn에서 제공하고 있는 'Javascript Immutability' 강의 정리 폴더
 
-📘 `codingTest`  프로그래머스 js 문제들 풀고 공부한 것 추가하여 저장
+📘 `codingTest`  프로그래머스 js 문제들 풀고 공부한 것 추가하여 저장 (1일 1코테 목표)
 
