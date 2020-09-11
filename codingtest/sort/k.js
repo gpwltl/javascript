@@ -17,8 +17,7 @@ var arrAns = [];
 var arrSort = [];
 for (var i = 0; i < commands.length; i++) {
     arrAns = array.slice(commands[i][0] - 1, commands[i][1]);
-    //arrSort = arrAns.sort((a, b) => a - b);
-    arrSort = arrAns.sort();
+    arrSort = arrAns.sort((a, b) => a - b);
     answer.push(arrSort[commands[i][2] - 1]);
 }
 console.log(answer);
@@ -32,5 +31,6 @@ feedback.
 2) push할 때 변수를 지정하면 결과는 push된 횟수가 리턴됨
     결과값만 원한다면 answer.push만 하고 answer을 출력하면 됨
 3) map사용?
-4) sort함수 사용시, default가 오름차순이기 때문에 안에 굳이 뭘 안써도 해당 배열이 오름차순으로 정렬됨 !!!
+4) sort함수 사용시, 그냥 arr.sort()라고만 쓰면 그냥 앞자리로만 판단해서 [1, 100, 45] 이런식으로 결과가 나온다.
+   그래서 a,b를 설정해서 오름차순, 내림차순으로 정렬하는 것. 그래야 [1, 45, 100]으로 출력
 */
